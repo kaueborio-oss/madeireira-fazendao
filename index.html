@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madeireira Fazendão</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #f8f6f2;
+    color: #222;
+}
+
+header {
+    background: #2e1f14;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1598514982201-8b4e7d8e9d3e') center/cover;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 15px 30px;
+    background: #2e7d32;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1b5e20;
+}
+
+.section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.section h3 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.diferenciais {
+    background: #3e2a1d;
+    color: white;
+}
+
+.diferenciais h3 {
+    color: white;
+}
+
+footer {
+    background: #2e1f14;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    padding: 15px 22px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌲 Madeireira Fazendão</h1>
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h2>Qualidade e resistência para sua obra rural</h2>
+        <p>Madeira tratada com durabilidade garantida para cercas, currais e construções.</p>
+        <a class="btn" href="https://wa.me/5565996706754">Solicitar Orçamento</a>
+    </div>
+</section>
+
+<section class="section" id="sobre">
+    <h3>Sobre a Empresa</h3>
+    <p>A Madeireira Fazendão oferece madeira tratada de alta qualidade, com foco em resistência, durabilidade e ótimo custo-benefício para o produtor rural e construção civil.</p>
+</section>
+
+<section class="section" id="produtos">
+    <h3>Nossos Produtos</h3>
+    <div class="cards">
+        <div class="card">
+            <h4>Eucalipto Tratado</h4>
+            <p>Mourões, palanques e esticadores resistentes.</p>
+        </div>
+        <div class="card">
+            <h4>Madeira Serrada</h4>
+            <p>Tábuas, vigas, ripas e peroba.</p>
+        </div>
+        <div class="card">
+            <h4>Acessórios</h4>
+            <p>Arame farpado, arame liso e grampos galvanizados.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section diferenciais">
+    <h3>Por que escolher a Fazendão?</h3>
+    <p>✔ Madeira selecionada<br>
+       ✔ Atendimento rápido via WhatsApp<br>
+       ✔ Preço competitivo<br>
+       ✔ Entrega na região</p>
+</section>
+
+<section class="section" id="contato">
+    <h3>Contato</h3>
+    <p>📞 (65) 99670-6754</p>
+    <a class="btn" href="https://wa.me/5565996706754">Falar no WhatsApp</a>
+</section>
+
+<footer>
+    © 2026 Madeireira Fazendão - Todos os direitos reservados
+</footer>
+
+<a class="whatsapp" href="https://wa.me/5565996706754">WhatsApp</a>
+
+</body>
+</html>
