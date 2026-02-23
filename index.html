@@ -8,9 +8,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Montserrat',sans-serif;}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Montserrat',sans-serif;
+}
 
-body{background:#111;color:#f5f5f5;}
+body{
+background:#111;
+color:#f5f5f5;
+}
 
 header{
 background:#000;
@@ -21,7 +29,9 @@ padding:20px 8%;
 border-bottom:1px solid #333;
 }
 
-.logo img{height:70px;}
+.logo img{
+height:70px;
+}
 
 nav a{
 color:#d4af37;
@@ -30,25 +40,34 @@ margin-left:25px;
 font-weight:600;
 }
 
-nav a:hover{color:#fff;}
+nav a:hover{
+color:#fff;
+}
 
 .hero{
-height:95vh;
+height:90vh;
 display:flex;
 align-items:center;
 padding:0 8%;
-background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('eucalipto.jpg') center/cover no-repeat;
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') center/cover;
 }
 
 .hero h2{
-font-size:52px;
+font-size:48px;
 margin-bottom:20px;
 color:#d4af37;
 }
 
+.hero p{
+font-size:18px;
+margin-bottom:30px;
+max-width:600px;
+}
+
 .btn{
 display:inline-block;
-padding:16px 40px;
+padding:15px 35px;
 background:#d4af37;
 color:#000;
 font-weight:700;
@@ -57,37 +76,39 @@ border-radius:40px;
 transition:0.3s;
 }
 
-.btn:hover{background:#fff;}
+.btn:hover{
+background:#fff;
+}
 
 .section{
-padding:100px 8%;
+padding:90px 8%;
+text-align:center;
 background:#181818;
 }
 
 .section h3{
-font-size:34px;
-margin-bottom:40px;
+font-size:32px;
+margin-bottom:50px;
 color:#d4af37;
-text-align:center;
 }
 
-.produto{
+.cards{
 display:grid;
-grid-template-columns:1fr 1fr;
-gap:50px;
-align-items:center;
-margin-bottom:80px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
 }
 
-.produto img{
-width:100%;
+.card{
+background:#222;
+padding:40px;
 border-radius:15px;
+transition:0.3s;
+border:1px solid #333;
 }
 
-.produto h4{
-font-size:28px;
-color:#d4af37;
-margin-bottom:15px;
+.card:hover{
+transform:translateY(-10px);
+border-color:#d4af37;
 }
 
 footer{
@@ -109,15 +130,6 @@ text-decoration:none;
 font-weight:bold;
 box-shadow:0 5px 15px rgba(0,0,0,0.4);
 }
-
-@media(max-width:900px){
-.produto{
-grid-template-columns:1fr;
-}
-.hero h2{
-font-size:34px;
-}
-}
 </style>
 </head>
 
@@ -128,6 +140,7 @@ font-size:34px;
 <img src="logo.png" alt="Madeireira Fazendão">
 </div>
 <nav>
+<a href="#sobre">Sobre</a>
 <a href="#produtos">Produtos</a>
 <a href="#contato">Contato</a>
 </nav>
@@ -135,41 +148,41 @@ font-size:34px;
 
 <section class="hero">
 <div>
-<h2>Eucalipto Tratado de Alta Resistência</h2>
+<h2>Excelência em Eucalipto Tratado</h2>
+<p>Durabilidade, resistência e qualidade premium para cercas, currais e construções rurais.</p>
 <a class="btn" href="https://wa.me/5565996706754">Solicitar Orçamento</a>
 </div>
 </section>
 
+<section class="section" id="sobre">
+<h3>Sobre a Madeireira Fazendão</h3>
+<p>Especialistas em eucalipto tratado e madeiras em geral, atendendo produtores rurais e construção civil com padrão de qualidade elevado.</p>
+</section>
+
 <section class="section" id="produtos">
-
-<h3>Nossos Principais Produtos</h3>
-
-<div class="produto">
-<img src="eucalipto.jpg">
-<div>
-<h4>Eucalipto Tratado 6x8</h4>
-<p>Ideal para cercas rurais. Madeira resistente e pronta para entrega.</p>
-<a class="btn" href="https://wa.me/5565996706754">Pedir Orçamento</a>
-</div>
+<h3>Nossos Produtos</h3>
+<div class="cards">
+<div class="card">
+<h4>Eucalipto Tratado</h4>
+<p>Mourões, palanques e esticadores com alta resistência.</p>
 </div>
 
-<div class="produto">
-<img src="eucalipto10x12.jpg">
-<div>
-<h4>Eucalipto Tratado 10x12</h4>
-<p>Alta durabilidade e resistência para projetos estruturais e reforçados.</p>
-<a class="btn" href="https://wa.me/5565996706754">Pedir Orçamento</a>
-</div>
+<div class="card">
+<h4>Madeiras em Geral</h4>
+<p>Tábuas, vigas, ripas, peroba e compensados.</p>
 </div>
 
+<div class="card">
+<h4>Acessórios</h4>
+<p>Arame farpado, arame liso e grampos galvanizados.</p>
+</div>
+</div>
 </section>
 
 <section class="section" id="contato">
 <h3>Contato</h3>
-<p style="text-align:center;">📞 (65) 99670-6754</p>
-<div style="text-align:center;">
+<p>📞 (65) 99670-6754</p>
 <a class="btn" href="https://wa.me/5565996706754">Falar no WhatsApp</a>
-</div>
 </section>
 
 <footer>
